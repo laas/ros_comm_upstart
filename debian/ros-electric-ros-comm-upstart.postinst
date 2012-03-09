@@ -1,0 +1,16 @@
+#!/bin/sh -e
+
+if [ "$1" = "configure" ]; then
+    if ! getent group ros > /dev/null 2>&1; then
+	addgroup --system ros >/dev/null
+    fi
+    if ! getent passwd ros > /dev/null 2>&1; then
+        adduser --system --home /var/lib/ros --shell /bin/bash ros
+    fi
+    if [ "$(id -gn ros)"  = "nogroup" ]; then
+	usermod -g ros ros
+    fi
+    chown -R ros:ros /var/lib/ros/
+fi
+
+#DEBHELPER#

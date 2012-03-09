@@ -1,0 +1,15 @@
+Source: ros-electric-ros-comm-upstart
+Section: unknown
+Priority: extra
+Maintainer: Thomas Moulard <thomas.moulard@gmail.com>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.3
+Homepage: https://github.com/thomas-moulard/ros_comm_upstart
+
+Package: ros-electric-ros-comm-upstart
+Architecture: all
+Depends: ros-electric-ros-comm, ${misc:Depends}
+Description: Upstart support for ROS Electric ros_comm package.
+ Provides upstart script to run ros_comm as a service using Upstart.
+ .
+ This package is designed for ROS Electric.

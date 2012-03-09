@@ -1,0 +1,24 @@
+description "roscore service"
+author "Thomas Moulard <thomas.moulard@gmail.com>"
+
+env ROS_LOG_DIR=/var/log/ros
+
+start on (filesystem and net-device-up IFACE!=lo)
+stop on runlevel [016]
+
+# Automatically restart process if crashed
+respawn
+
+pre-start script
+	mkdir -p /var/log/ros
+	chown ros:ros /var/log/ros/
+
+	touch /var/run/roscore.pid
+	chmod 644 /var/run/roscore.pid
+	chown ros:ros /var/run/roscore.pid
+end script
+
+# Start the process
+script
+exec su ros -c "source /opt/ros/electric/setup.sh && roscore"
+end script

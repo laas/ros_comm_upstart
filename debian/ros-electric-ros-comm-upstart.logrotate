@@ -1,0 +1,5 @@
+/var/log/ros/*/*.log {
+    daily
+    missingok
+    create 644 ros root
+}
