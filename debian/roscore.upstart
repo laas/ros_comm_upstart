@@ -10,7 +10,7 @@ stop on runlevel [016]
 respawn
 
 pre-start script
-	mkdir -p /var/log/ros
+	mkdir -p /var/log/ros/
 	chown ros:ros /var/log/ros/
 
 	touch /var/run/roscore.pid
@@ -20,5 +20,5 @@ end script
 
 # Start the process
 script
-exec su ros -c "source /opt/ros/electric/setup.sh && roscore"
+exec su ros -c "source /opt/ros/electric/setup.sh && roscore --pid=/var/run/roscore.pid"
 end script
