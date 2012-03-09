@@ -29,9 +29,9 @@ regularly.
 
 The roscore process id is stored in `/var/run/roscore.pid`.
 
-Uninstalling the package will *not* delete the user not the group.
-You have to id manually. The user home directory as well as the logs
-will also remain on the filesystem.
+Uninstalling the package will *not* delete the user nor the group.
+You have to do it manually. The user home directory as well as the
+logs will also remain on the filesystem.
 
 Use the GitHub issue tracker to report feedbacks and bugs:
 https://github.com/laas/ros_comm_upstart/issues
