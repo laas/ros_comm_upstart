@@ -1,3 +1,10 @@
+ros-electric-ros-comm-upstart (0.2) unstable; urgency=low
+
+  * Fix homepage.
+  * Please lintian.
+
+ -- Thomas Moulard <thomas.moulard@gmail.com>  Fri, 19 Mar 2012 13:32:28 +0100
+
 ros-electric-ros-comm-upstart (0.1) unstable; urgency=low
 
   * Initial release.
