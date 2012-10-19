@@ -7,7 +7,7 @@ export DH_ALWAYS_EXCLUDE=.git
 export DH_VERBOSE=1
 
 override_dh_installinit:
-	dh_installinit --name=roscore
+	dh_installinit --name=roscore-fuerte
 
 %:
 	dh  $@
