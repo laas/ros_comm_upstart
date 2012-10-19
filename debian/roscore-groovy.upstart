@@ -1,4 +1,4 @@
-description "roscore service"
+description "roscore service (Groovy)"
 author "Thomas Moulard <thomas.moulard@gmail.com>"
 
 env ROS_LOG_DIR=/var/log/ros
