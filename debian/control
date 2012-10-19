@@ -1,4 +1,4 @@
-Source: ros-electric-ros-comm-upstart
+Source: ros-fuerte-ros-comm-upstart
 Section: misc
 Priority: extra
 Maintainer: Thomas Moulard <thomas.moulard@gmail.com>
@@ -6,14 +6,14 @@ Build-Depends: debhelper (>= 7.0.50~)
 Standards-Version: 3.9.3
 Homepage: https://github.com/laas/ros_comm_upstart
 
-Package: ros-electric-ros-comm-upstart
+Package: ros-fuerte-ros-comm-upstart
 Architecture: all
-Depends: ros-electric-ros-comm, ${misc:Depends}, adduser
+Depends: ros-fuerte-ros-comm, ${misc:Depends}, adduser
 Description: Upstart support for ROS Electric ros_comm package
  Provides upstart script to run ros_comm as a service using Upstart.
  .
  This script creates a group and user called ros to sandbox running
  nodes. Log information are stored in /var/log.
  .
- This package is designed for ROS Electric.
-Wg-Rosdistro: electric
+ This package is designed for ROS Fuerte.
+Wg-Rosdistro: fuerte
