@@ -17,27 +17,3 @@ Description: Upstart support for ROS Electric ros_comm package
  .
  This package is designed for ROS Electric.
 Wg-Rosdistro: electric
-
-Package: ros-fuerte-ros-comm-upstart
-Architecture: all
-Depends: ros-fuerte-ros-comm, ${misc:Depends}, adduser
-Description: Upstart support for ROS Electric ros_comm package
- Provides upstart script to run ros_comm as a service using Upstart.
- .
- This script creates a group and user called ros to sandbox running
- nodes. Log information are stored in /var/log.
- .
- This package is designed for ROS Electric.
-Wg-Rosdistro: fuerte
-
-Package: ros-groovy-ros-comm-upstart
-Architecture: all
-Depends: ros-groovy-ros-comm, ${misc:Depends}, adduser
-Description: Upstart support for ROS Electric ros_comm package
- Provides upstart script to run ros_comm as a service using Upstart.
- .
- This script creates a group and user called ros to sandbox running
- nodes. Log information are stored in /var/log.
- .
- This package is designed for ROS Electric.
-Wg-Rosdistro: groovy
