@@ -4,7 +4,7 @@ Priority: extra
 Maintainer: Thomas Moulard <thomas.moulard@gmail.com>
 Build-Depends: debhelper (>= 7.0.50~)
 Standards-Version: 3.9.3
-Homepage: https://github.com/thomas-moulard/ros_comm_upstart
+Homepage: https://github.com/laas/ros_comm_upstart
 
 Package: ros-electric-ros-comm-upstart
 Architecture: all
