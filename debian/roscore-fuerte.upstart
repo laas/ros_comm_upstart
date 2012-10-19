@@ -1,4 +1,4 @@
-description "roscore service"
+description "roscore service (Fuerte)"
 author "Thomas Moulard <thomas.moulard@gmail.com>"
 
 env ROS_LOG_DIR=/var/log/ros
@@ -20,5 +20,5 @@ end script
 
 # Start the process
 script
-exec su ros -c "source /opt/ros/electric/setup.sh && roscore --pid=/var/run/roscore.pid"
+exec su ros -c "source /opt/ros/fuerte/setup.sh && roscore --pid=/var/run/roscore.pid"
 end script
