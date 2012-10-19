@@ -4,7 +4,7 @@ This work was packaged for Debian by:
 
 It was downloaded from https://github.com/thomas-moulard/ros_comm_upstart
 
-Upstream Author(s):
+Upstream Author:
 
     Thomas Moulard <thomas.moulard@gmail.com>
 
@@ -44,6 +44,4 @@ License:
 The Debian packaging is:
 
     Copyright (C) 2012 Thomas Moulard <thomas.moulard@gmail.com>
-
-and is licensed under the BSD license,
-see `/usr/share/common-licenses/BSD'.
+    and is licensed under the BSD license.
