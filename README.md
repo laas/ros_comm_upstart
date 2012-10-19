@@ -9,7 +9,7 @@ https://github.com/laas/ros_comm_upstart/downloads
 
 1. Download the last version
 2. Install it:
-`$ sudo dpkg -i ./ros-electric-ros-comm-upstart_*_all.deb`
+`$ sudo dpkg -i ./ros-{electric,fuerte,groovy}-ros-comm-upstart_*_all.deb`
 3. Enjoy!
 
 roscore is now available as a service running as a separate user.
