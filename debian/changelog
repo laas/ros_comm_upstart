@@ -1,5 +1,5 @@
-ros-electric-ros-comm-upstart (0.1) unstable; urgency=low
+ros-fuerte-ros-comm-upstart (0.2) unstable; urgency=low
 
   * Initial release.
 
- -- Thomas Moulard <thomas.moulard@gmail.com>  Fri, 09 Mar 2012 13:32:28 +0100
+ -- Thomas Moulard <thomas.moulard@gmail.com>  Fri, 19 Oct 2012 13:32:28 +0100
