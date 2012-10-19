@@ -20,5 +20,5 @@ end script
 
 # Start the process
 script
-exec su ros -c "source /opt/ros/fuerte/setup.sh && roscore --pid=/var/run/roscore.pid"
+exec su ros -c "source /opt/ros/fuerte/setup.sh; roscore"
 end script
