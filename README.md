@@ -19,10 +19,16 @@ The system user home directory is '/var/lib/ros'.
 
 As any other upstart service, it can be controlled as follow:
 
-   * start: `start roscore`
-   * stop: `stop roscore`
-   * restart: `restart roscore`
-   * status: `status roscore`
+   * start: `start roscore-{electric,fuerte}`
+   * stop: `stop roscore-{electric,fuerte}`
+   * restart: `restart roscore-{electric,fuerte}`
+   * status: `status roscore-{electric,fuerte}`
+
+You must choose between `electric` and `fuerte` in the previous commands.
+Each ROS version embeds a different upstart service to allow you to install several ROS versions side-by-side,
+but using one roscore or another should not lead to any distinctive changes. You *cannot* uses both of them
+simultaneously as they listen to the same port.
+
 
 The log files are stored in `/var/log/ros` and cleaned using logrotate
 regularly.
